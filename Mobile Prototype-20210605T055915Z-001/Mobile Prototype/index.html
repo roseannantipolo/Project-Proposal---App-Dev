@@ -1,0 +1,211 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charSet="UTF-8"/>
+    <title>Figma Prototype Export</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* OWN CSS */
+        body {
+            font-family: Helvetica, sans-serif;
+        }
+
+        li:first-child {
+            margin-bottom: 8pt;
+        }
+
+        #helper {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            position: fixed;
+            bottom: 16pt;
+            right: 16pt;
+            padding: 8pt;
+            border-radius: 4pt;
+        }
+
+        #helper svg {
+            margin-right: 4pt;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+    </style>
+
+    <script>
+      const frames = {"525w1599":{"id":"525w1599","name":"iPhone-11-Pro-Max---1","clickableChildren":{"525w1702":{"name":"Lockscreen Assets","type":"FRAME","x":0,"y":0,"rotation":0},"525w1705":{"name":"Home Indicator","type":"FRAME","x":0,"y":862,"rotation":0},"525w2078":{"name":"iPhone X, 11 Pro / Dark / Base","type":"FRAME","x":0,"y":0,"rotation":0},"525w2105":{"name":"iPhone X, 11 Pro / Light / Base","type":"FRAME","x":0,"y":0,"rotation":0},"525w2131":{"name":"Time / Dark / Base","type":"FRAME","x":21.000022888183594,"y":12,"rotation":0},"525w2134":{"name":"Time / Light / Base","type":"FRAME","x":0,"y":0,"rotation":0},"525w1882":{"name":"Light / Opaque / Actions","type":"FRAME","x":8,"y":151,"rotation":0},"525w1917":{"name":"Light / Opaque / Default","type":"FRAME","x":0,"y":34,"rotation":0},"525w1933":{"name":"Light / Translucent","type":"FRAME","x":0,"y":0,"rotation":0},"525w1934":{"name":"Content","type":"FRAME","x":12,"y":38,"rotation":0},"525w1948":{"name":"App Icon","type":"FRAME","x":10,"y":10,"rotation":0},"525w1951":{"name":"Icon / Light / Close Button","type":"FRAME","x":364,"y":0,"rotation":0},"525w1956":{"name":"Light / Notification Action / Multiple","destination":"159w144","x":0,"y":227,"w":398,"h":60,"rotation":0,"parent":"525w1882","type":"FRAME"},"525w1969":{"name":"Light / Notification Action / Single","type":"FRAME","x":0,"y":0,"rotation":0},"I525w2201;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0}}},"159w144":{"id":"159w144","name":"iPhone-11-Pro-Max---2","clickableChildren":{"159w158":{"name":"Login Button","destination":"636w534","x":178,"y":639,"w":180,"h":50,"rotation":0,"parent":"159w144"},"159w480":{"name":"Sign Up","destination":"159w210","x":54,"y":639,"w":104,"h":50,"rotation":0,"parent":"159w144"},"159w428":{"name":"Login with Google","destination":"636w534","x":54,"y":722,"w":304,"h":50,"rotation":0,"parent":"159w144"},"159w431":{"name":"google 1","type":"FRAME","x":118.0000228881836,"y":736,"rotation":0},"I159w146;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0}}},"636w534":{"id":"636w534","name":"iPhone-11-Pro-Max---4","clickableChildren":{"I636w629;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"637w610":{"name":"back btn","destination":"313w386","x":34,"y":73,"w":31,"h":33,"rotation":0},"636w686":{"name":"left-arrow (2) 1","type":"FRAME","x":36,"y":76,"rotation":0},"637w562":{"name":"finish 1","type":"FRAME","x":47,"y":785,"rotation":0},"637w607":{"name":"Rectangle 56","destination":"525w2216","x":342,"y":723,"w":36,"h":86,"rotation":0,"parent":"636w534"},"637w577":{"name":"left-arrow (2) 2","type":"FRAME","x":373,"y":755,"rotation":-180}}},"313w386":{"id":"313w386","name":"4","clickableChildren":{"I313w389;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"313w393":{"name":"Group 1","destination":"413w869","x":32,"y":70,"w":28,"h":28,"rotation":0},"313w394":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0},"313w398":{"name":"Group 177","destination":"313w680","x":272,"y":551,"w":110,"h":277,"rotation":0},"313w403":{"name":"Frame","type":"FRAME","x":218,"y":588,"rotation":0},"313w508":{"name":"Group 176","destination":"319w304","x":32,"y":551,"w":110,"h":277,"rotation":0},"313w513":{"name":"Frame","type":"FRAME","x":-13,"y":614,"rotation":0},"313w576":{"name":"Group 178","destination":"319w1","x":152,"y":551,"w":110,"h":277,"rotation":0},"313w581":{"name":"Frame","type":"FRAME","x":98,"y":586,"rotation":0},"413w791":{"name":"profile-user (2) 1","type":"FRAME","x":-285,"y":384,"rotation":0},"413w798":{"name":"logout 1","type":"FRAME","x":-285,"y":821,"rotation":0},"413w807":{"name":"settings (1) 1","type":"FRAME","x":-285,"y":756,"rotation":0},"413w812":{"name":"phonebook 1","type":"FRAME","x":-285,"y":451,"rotation":0},"413w822":{"name":"map (2) 1","type":"FRAME","x":-285,"y":514,"rotation":0},"413w838":{"name":"email 1","type":"FRAME","x":-285,"y":625,"rotation":0},"413w852":{"name":"menu","type":"FRAME","x":-52,"y":70,"rotation":0},"413w859":{"name":"information (1) 1","type":"FRAME","x":-285,"y":691,"rotation":0},"413w866":{"name":"house-black-silhouette-without-door 1","type":"FRAME","x":-285,"y":319,"rotation":0},"413w2100":{"name":"next 3","type":"FRAME","x":341,"y":1188,"rotation":-90.00000250447808},"413w2126":{"name":"badge 1","type":"FRAME","x":296.63583755493164,"y":929.9479751586914,"rotation":0},"413w2595":{"name":"next 3","type":"FRAME","x":339,"y":1187,"rotation":-90.00000250447808},"413w2620":{"name":"si-glyph:ambulance","type":"FRAME","x":292.58959579467773,"y":923.5895957946777,"rotation":0},"413w3036":{"name":"next 3","type":"FRAME","x":341,"y":1179,"rotation":-90.00000250447808},"413w3061":{"name":"fire 1","type":"FRAME","x":296.057804107666,"y":927.6358337402344,"rotation":0}}},"413w869":{"id":"413w869","name":"22","clickableChildren":{"413w887":{"name":"Frame","type":"FRAME","x":218,"y":588,"rotation":0},"413w998":{"name":"Frame","type":"FRAME","x":-13,"y":614,"rotation":0},"413w1067":{"name":"Frame","type":"FRAME","x":98,"y":586,"rotation":0},"413w1268":{"name":"Group 226","destination":"459w366","x":70,"y":381,"w":138,"h":30,"rotation":0,"parent":"413w869"},"413w1271":{"name":"profile-user (2) 1","type":"FRAME","x":70,"y":384,"rotation":0},"413w1275":{"name":"Group 223","destination":"2w2","x":70,"y":818,"w":123,"h":30,"rotation":0,"parent":"413w869"},"413w1278":{"name":"logout 1","type":"FRAME","x":70,"y":821,"rotation":0},"413w1284":{"name":"Group 222","destination":"439w498","x":70,"y":753,"w":135,"h":30,"rotation":0,"parent":"413w869"},"413w1287":{"name":"settings (1) 1","type":"FRAME","x":70,"y":756,"rotation":0},"413w1289":{"name":"Group 225","destination":"437w0","x":70,"y":448,"w":147,"h":30,"rotation":0,"parent":"413w869"},"413w1292":{"name":"phonebook 1","type":"FRAME","x":70,"y":451,"rotation":0},"413w1299":{"name":"Group 224","destination":"437w391","x":70,"y":511,"w":150,"h":30,"rotation":0,"parent":"413w869"},"413w1302":{"name":"map (2) 1","type":"FRAME","x":70,"y":514,"rotation":0},"413w1315":{"name":"Group 220","destination":"439w292","x":70,"y":622,"w":165,"h":30,"rotation":0,"parent":"413w869"},"413w1318":{"name":"email 1","type":"FRAME","x":70,"y":625,"rotation":0},"413w1331":{"name":"Group 1","destination":"313w386","x":303,"y":70,"w":28,"h":28,"rotation":0,"parent":"413w869"},"413w1332":{"name":"menu","type":"FRAME","x":303,"y":70,"rotation":0},"413w1336":{"name":"Group 221","destination":"437w243","x":70,"y":688,"w":144,"h":30,"rotation":0,"parent":"413w869"},"413w1339":{"name":"information (1) 1","type":"FRAME","x":70,"y":691,"rotation":0},"413w1343":{"name":"Group 227","destination":"313w386","x":70,"y":316,"w":115,"h":30,"rotation":0,"parent":"413w869"},"413w1346":{"name":"house-black-silhouette-without-door 1","type":"FRAME","x":70,"y":319,"rotation":0},"I413w873;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0}}},"459w366":{"id":"459w366","name":"32","clickableChildren":{"I459w368;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"638w117":{"name":"back btn","destination":"313w386","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"2w2":{"id":"2w2","name":"1","clickableChildren":{"I14w170;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"159w143":{"name":"Group 31","destination":"159w144","x":55,"y":514,"w":305,"h":50,"rotation":0},"18w421":{"name":"Group 7","destination":"159w1328","x":55,"y":587,"w":305,"h":50,"rotation":0}}},"159w1328":{"id":"159w1328","name":"15","clickableChildren":{"I159w1330;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"159w1341":{"name":"Group 8","destination":"638w351","x":58,"y":639,"w":304,"h":50,"rotation":0}}},"638w351":{"id":"638w351","name":"44","clickableChildren":{"I638w354;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"638w387":{"name":"Group","destination":"506w3603","x":355,"y":709,"w":10.8013916015625,"h":21.6517333984375,"rotation":9.974817521538965e-15,"parent":"638w351"},"638w395":{"name":"info-button 1","type":"FRAME","x":46,"y":725,"rotation":0},"638w401":{"name":"calendar 1","type":"FRAME","x":234,"y":725,"rotation":0},"638w423":{"name":"info-button 1","type":"FRAME","x":46,"y":819,"rotation":0},"638w429":{"name":"calendar 1","type":"FRAME","x":234,"y":819,"rotation":0},"638w451":{"name":"info-button 1","type":"FRAME","x":46,"y":913,"rotation":0},"638w457":{"name":"calendar 1","type":"FRAME","x":234,"y":913,"rotation":0},"638w474":{"name":"finish 1","type":"FRAME","x":56,"y":431,"rotation":0},"638w484":{"name":"si-glyph:ambulance","type":"FRAME","x":292.58959579467773,"y":269.58959579467773,"rotation":0},"638w494":{"name":"Group 148","destination":"13w319","x":32,"y":508,"w":350,"h":50,"rotation":0,"parent":"638w351"},"638w501":{"name":"Group 1","destination":"413w3771","x":32,"y":70,"w":28,"h":28,"rotation":0},"638w502":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0}}},"506w3603":{"id":"506w3603","name":"42","clickableChildren":{"I506w3605;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"506w3612":{"name":"calendar 1","type":"FRAME","x":260,"y":149,"rotation":0},"638w551":{"name":"back btn","destination":"638w351","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"13w319":{"id":"13w319","name":"17","clickableChildren":{"I13w320;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"159w1405":{"name":"Group 147","destination":"159w1406","x":140,"y":714,"w":134,"h":24,"rotation":0},"159w1396":{"name":"finish 1","type":"FRAME","x":59,"y":667,"rotation":0},"18w1034":{"name":"Group 19","destination":"13w347","x":39,"y":766,"w":336,"h":50,"rotation":0,"parent":"13w319"},"413w3661":{"name":"si-glyph:ambulance","type":"FRAME","x":289.58959579467773,"y":149.58959579467773,"rotation":0},"638w144":{"name":"back btn","destination":"638w351","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"159w1406":{"id":"159w1406","name":"18","clickableChildren":{"I159w1407;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"159w1486":{"name":"si-glyph:ambulance","type":"FRAME","x":289.58959579467773,"y":149.58959579467773,"rotation":0},"159w1803":{"name":"Group 19","destination":"13w347","x":55,"y":766,"w":305,"h":50,"rotation":0},"638w148":{"name":"back btn","destination":"13w319","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"13w347":{"id":"13w347","name":"19","clickableChildren":{"I13w348;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"18w1099":{"name":"Group 19","destination":"506w3603","x":39,"y":764,"w":336,"h":50,"rotation":0},"413w3674":{"name":"si-glyph:ambulance","type":"FRAME","x":289.58959579467773,"y":149.58959579467773,"rotation":0}}},"413w3771":{"id":"413w3771","name":"30","clickableChildren":{"I413w3773;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"413w3784":{"name":"info-button 1","type":"FRAME","x":46,"y":725,"rotation":0},"413w3790":{"name":"calendar 1","type":"FRAME","x":234,"y":725,"rotation":0},"413w3812":{"name":"info-button 1","type":"FRAME","x":46,"y":819,"rotation":0},"413w3818":{"name":"calendar 1","type":"FRAME","x":234,"y":819,"rotation":0},"413w3840":{"name":"info-button 1","type":"FRAME","x":46,"y":913,"rotation":0},"413w3846":{"name":"calendar 1","type":"FRAME","x":234,"y":913,"rotation":0},"439w679":{"name":"history (3) 1","type":"FRAME","x":3,"y":45,"rotation":0},"413w3868":{"name":"finish 1","type":"FRAME","x":56,"y":431,"rotation":0},"413w3878":{"name":"si-glyph:ambulance","type":"FRAME","x":292.58959579467773,"y":269.58959579467773,"rotation":0},"413w3896":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0},"413w3919":{"name":"Group 223","destination":"2w2","x":70,"y":818,"w":123,"h":30,"rotation":0,"parent":"413w3771"},"413w3922":{"name":"logout 1","type":"FRAME","x":70,"y":821,"rotation":0},"413w3928":{"name":"Group 222","destination":"506w417","x":70,"y":753,"w":135,"h":30,"rotation":0,"parent":"413w3771"},"413w3931":{"name":"settings (1) 1","type":"FRAME","x":70,"y":756,"rotation":0},"413w3959":{"name":"Group 220","destination":"456w968","x":70,"y":446,"w":165,"h":30,"rotation":0,"parent":"413w3771"},"413w3962":{"name":"email 1","type":"FRAME","x":70,"y":449,"rotation":0},"413w3975":{"name":"Group 1","destination":"638w351","x":303,"y":70,"w":28,"h":28,"rotation":0,"parent":"413w3771"},"413w3976":{"name":"menu","type":"FRAME","x":303,"y":70,"rotation":0},"413w3980":{"name":"Group 221","destination":"456w954","x":70,"y":511,"w":144,"h":30,"rotation":0,"parent":"413w3771"},"413w3983":{"name":"information (1) 1","type":"FRAME","x":70,"y":514,"rotation":0},"413w3987":{"name":"Group 227","destination":"638w351","x":70,"y":316,"w":115,"h":30,"rotation":0,"parent":"413w3771"},"413w3990":{"name":"house-black-silhouette-without-door 1","type":"FRAME","x":70,"y":319,"rotation":0},"456w787":{"name":"Group 270","destination":"501w400","x":70,"y":381,"w":207,"h":30,"rotation":0,"parent":"413w3771"},"456w790":{"name":"file 1","type":"FRAME","x":70,"y":385,"rotation":0}}},"506w417":{"id":"506w417","name":"37","clickableChildren":{"I506w419;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"506w421":{"name":"toggle 1","type":"FRAME","x":328,"y":298,"rotation":0},"506w423":{"name":"toggle 2","type":"FRAME","x":327,"y":365,"rotation":0},"638w543":{"name":"back btn","destination":"638w351","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"456w968":{"id":"456w968","name":"34","clickableChildren":{"I456w970;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"456w973":{"name":"email 1","type":"FRAME","x":62,"y":338,"rotation":0},"456w986":{"name":"pin 1","type":"FRAME","x":62,"y":252,"rotation":0},"456w990":{"name":"call (1) 1","type":"FRAME","x":62,"y":419,"rotation":0},"456w998":{"name":"linkedin 1","type":"FRAME","x":63,"y":672,"rotation":0},"456w1002":{"name":"facebook (1) 1","type":"FRAME","x":62,"y":495,"rotation":0},"456w1004":{"name":"twitter 1","type":"FRAME","x":62,"y":586,"rotation":0},"638w535":{"name":"back btn","destination":"638w351","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"456w954":{"id":"456w954","name":"33","clickableChildren":{"I456w956;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"456w960":{"name":"search 1","type":"FRAME","x":385,"y":74,"rotation":-180},"638w539":{"name":"back btn","destination":"638w351","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"501w400":{"id":"501w400","name":"35","clickableChildren":{"506w4":{"name":"Group 156","destination":"506w270","x":32,"y":188,"w":350,"h":84,"rotation":0},"506w14":{"name":"info-button 1","type":"FRAME","x":46,"y":235,"rotation":0},"506w20":{"name":"calendar 1","type":"FRAME","x":234,"y":235,"rotation":0},"506w42":{"name":"info-button 1","type":"FRAME","x":46,"y":515,"rotation":0},"506w48":{"name":"calendar 1","type":"FRAME","x":234,"y":515,"rotation":0},"506w60":{"name":"Group 157","destination":"506w270","x":32,"y":282,"w":350,"h":84,"rotation":0},"506w70":{"name":"info-button 1","type":"FRAME","x":46,"y":329,"rotation":0},"506w76":{"name":"calendar 1","type":"FRAME","x":234,"y":329,"rotation":0},"506w98":{"name":"info-button 1","type":"FRAME","x":46,"y":609,"rotation":0},"506w104":{"name":"calendar 1","type":"FRAME","x":234,"y":609,"rotation":0},"506w126":{"name":"info-button 1","type":"FRAME","x":50,"y":797,"rotation":0},"506w132":{"name":"calendar 1","type":"FRAME","x":238,"y":797,"rotation":0},"506w154":{"name":"info-button 1","type":"FRAME","x":46,"y":423,"rotation":0},"506w160":{"name":"calendar 1","type":"FRAME","x":234,"y":423,"rotation":0},"506w182":{"name":"info-button 1","type":"FRAME","x":46,"y":703,"rotation":0},"506w188":{"name":"calendar 1","type":"FRAME","x":234,"y":703,"rotation":0},"506w210":{"name":"info-button 1","type":"FRAME","x":50,"y":891,"rotation":0},"506w216":{"name":"calendar 1","type":"FRAME","x":238,"y":891,"rotation":0},"506w252":{"name":"info-button 1","type":"FRAME","x":50,"y":985,"rotation":0},"506w258":{"name":"calendar 1","type":"FRAME","x":238,"y":985,"rotation":0},"638w558":{"name":"back btn","destination":"638w351","x":26,"y":68,"w":31,"h":33,"rotation":0},"I506w3;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0}}},"506w270":{"id":"506w270","name":"36","clickableChildren":{"I506w272;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"506w317":{"name":"calendar 1","type":"FRAME","x":260,"y":149,"rotation":0},"638w529":{"name":"back btn","destination":"501w400","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"439w498":{"id":"439w498","name":"27","clickableChildren":{"I439w500;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"439w587":{"name":"toggle 1","type":"FRAME","x":328,"y":298,"rotation":0},"439w605":{"name":"toggle 2","type":"FRAME","x":327,"y":365,"rotation":0},"439w630":{"name":"Group 241","destination":"2w2","x":42,"y":497,"w":85,"h":38,"rotation":0},"506w2672":{"name":"evacuation 1","type":"FRAME","x":137,"y":705,"rotation":0},"638w113":{"name":"back btn","destination":"313w386","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"437w0":{"id":"437w0","name":"20","clickableChildren":{"I437w2;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"437w115":{"name":"search 1","type":"FRAME","x":385,"y":74,"rotation":-180},"638w97":{"name":"back btn","destination":"313w386","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"437w391":{"id":"437w391","name":"28","clickableChildren":{"I437w393;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"437w592":{"name":"funnel 1","type":"FRAME","x":47.54296875,"y":149.6603126525879,"rotation":0},"437w639":{"name":"microphone 1","type":"FRAME","x":354,"y":106.65838241577148,"rotation":0},"506w2645":{"name":"badge (1) 1","type":"FRAME","x":87.4375,"y":413.23951721191406,"rotation":0},"506w2653":{"name":"flame 1","type":"FRAME","x":178.4375,"y":534.7115678787231,"rotation":0},"506w2662":{"name":"cross (1) 1","type":"FRAME","x":288.4375,"y":383.6121883392334,"rotation":0},"506w3422":{"name":"Frame 1","type":"FRAME","x":1,"y":121,"rotation":0},"506w3456":{"name":"flame 1","type":"FRAME","x":342,"y":1048,"rotation":0},"506w3466":{"name":"cursor 1","type":"FRAME","x":342,"y":1138,"rotation":0},"506w3478":{"name":"phone-call 1","type":"FRAME","x":302,"y":1138,"rotation":0},"506w3429":{"name":"cross (1) 1","type":"FRAME","x":342,"y":890,"rotation":0},"506w3437":{"name":"cursor 1","type":"FRAME","x":344,"y":968,"rotation":0},"506w3449":{"name":"phone-call 1","type":"FRAME","x":304,"y":968,"rotation":0},"506w3545":{"name":"cross (1) 1","type":"FRAME","x":342,"y":1372,"rotation":0},"506w3553":{"name":"cursor 1","type":"FRAME","x":344,"y":1450,"rotation":0},"506w3565":{"name":"phone-call 1","type":"FRAME","x":304,"y":1450,"rotation":0},"506w2984":{"name":"cursor 1","type":"FRAME","x":344,"y":810,"rotation":0},"506w2996":{"name":"phone-call 1","type":"FRAME","x":304,"y":810,"rotation":0},"506w3098":{"name":"badge (1) 1","type":"FRAME","x":342,"y":732,"rotation":0},"506w3577":{"name":"cursor 1","type":"FRAME","x":344,"y":1292,"rotation":0},"506w3589":{"name":"phone-call 1","type":"FRAME","x":304,"y":1292,"rotation":0},"506w3593":{"name":"badge (1) 1","type":"FRAME","x":342,"y":1214,"rotation":0},"638w109":{"name":"back btn","destination":"313w386","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"439w292":{"id":"439w292","name":"21","clickableChildren":{"I439w294;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"439w343":{"name":"email 1","type":"FRAME","x":62,"y":338,"rotation":0},"439w370":{"name":"pin 1","type":"FRAME","x":62,"y":252,"rotation":0},"439w389":{"name":"call (1) 1","type":"FRAME","x":62,"y":419,"rotation":0},"439w412":{"name":"linkedin 1","type":"FRAME","x":63,"y":672,"rotation":0},"439w416":{"name":"facebook (1) 1","type":"FRAME","x":62,"y":495,"rotation":0},"439w418":{"name":"twitter 1","type":"FRAME","x":62,"y":586,"rotation":0},"638w101":{"name":"back btn","destination":"313w386","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"437w243":{"id":"437w243","name":"25","clickableChildren":{"I437w245;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"437w252":{"name":"search 1","type":"FRAME","x":385,"y":74,"rotation":-180},"638w105":{"name":"back btn","destination":"313w386","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"313w680":{"id":"313w680","name":"5","clickableChildren":{"I313w683;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"313w688":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0},"313w692":{"name":"Group 177","destination":"413w2632","x":272,"y":257,"w":110,"h":572,"rotation":0},"313w697":{"name":"Frame","type":"FRAME","x":218,"y":309,"rotation":0},"313w802":{"name":"Group 176","destination":"319w304","x":32,"y":552,"w":110,"h":277,"rotation":0},"313w807":{"name":"Frame","type":"FRAME","x":-13,"y":615,"rotation":0},"313w870":{"name":"Group 178","destination":"319w1","x":152,"y":552,"w":110,"h":277,"rotation":0},"313w875":{"name":"Frame","type":"FRAME","x":98,"y":587,"rotation":0},"413w2996":{"name":"next 3","type":"FRAME","x":341,"y":1179,"rotation":-90.00000250447808},"413w3021":{"name":"fire 1","type":"FRAME","x":296.057804107666,"y":927.6358337402344,"rotation":0}}},"413w2632":{"id":"413w2632","name":"29","clickableChildren":{"I413w2635;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"413w2640":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0},"413w2763":{"name":"Frame","type":"FRAME","x":-13,"y":615,"rotation":0},"413w2832":{"name":"Frame","type":"FRAME","x":98,"y":587,"rotation":0},"413w2653":{"name":"Frame","type":"FRAME","x":-70.45478820800781,"y":60.15313923358917,"rotation":0},"413w2933":{"name":"Rectangle 1","destination":"506w2169","x":55,"y":708,"w":305,"h":50,"rotation":0},"413w2940":{"name":"next 3","type":"FRAME","x":341,"y":567,"rotation":-90.00000250447808},"413w2965":{"name":"fire 1","type":"FRAME","x":296.057804107666,"y":315.6358337402344,"rotation":0},"637w618":{"name":"back btn","destination":"313w386","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"506w2169":{"id":"506w2169","name":"40","clickableChildren":{"506w2180":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0},"506w2192":{"name":"Frame","type":"FRAME","x":-13,"y":615,"rotation":0},"506w2261":{"name":"Frame","type":"FRAME","x":98,"y":587,"rotation":0},"506w2352":{"name":"Frame","type":"FRAME","x":-70.45478820800781,"y":60.15313923358917,"rotation":0},"506w2467":{"name":"next 3","type":"FRAME","x":341,"y":567,"rotation":-90.00000250447808},"506w2492":{"name":"fire 1","type":"FRAME","x":296.057804107666,"y":315.6358337402344,"rotation":0},"I506w2174;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"638w14":{"name":"Confirm","destination":"13w6","x":194,"y":499,"w":140,"h":40,"rotation":0,"parent":"506w2169"},"638w17":{"name":"Cancel","destination":"413w2632","x":81,"y":499,"w":95,"h":40,"rotation":0,"parent":"506w2169"}}},"13w6":{"id":"13w6","name":"11","clickableChildren":{"159w876":{"name":"Group 134","destination":"159w1029","x":0,"y":92,"w":414,"h":761,"rotation":0},"I18w429;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"159w851":{"name":"finish 1","type":"FRAME","x":322,"y":157,"rotation":0},"413w4120":{"name":"Group 19","destination":"313w386","x":39,"y":727,"w":336,"h":50,"rotation":0}}},"159w1029":{"id":"159w1029","name":"12","clickableChildren":{"I159w1058;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"159w1082":{"name":"finish 1","type":"FRAME","x":322,"y":157,"rotation":0},"159w1248":{"name":"Group 145","destination":"13w6","x":39,"y":552,"w":155,"h":50,"rotation":0},"159w1247":{"name":"Group 144","destination":"2w8","x":220,"y":552,"w":155,"h":50,"rotation":0}}},"2w8":{"id":"2w8","name":"13","clickableChildren":{"I22w76;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"159w680":{"name":"fire 1","type":"FRAME","x":296.057804107666,"y":157.63583374023438,"rotation":0},"159w750":{"name":"Group 96","destination":"13w6","x":172,"y":696,"w":70,"h":70,"rotation":0},"159w752":{"name":"end-call (1) 1","type":"FRAME","x":183.6666669845581,"y":707.6666669845581,"rotation":0},"159w775":{"name":"iconmonstr-sound-wave-1 1","type":"FRAME","x":110,"y":459,"rotation":0}}},"319w304":{"id":"319w304","name":"7","clickableChildren":{"I319w307;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"319w311":{"name":"Group 1","destination":"413w869","x":32,"y":70,"w":28,"h":28,"rotation":0},"319w312":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0},"319w316":{"name":"Group 177","destination":"313w680","x":272,"y":552,"w":110,"h":277,"rotation":0},"319w321":{"name":"Frame","type":"FRAME","x":218,"y":589,"rotation":0},"319w426":{"name":"Group 176","destination":"413w1657","x":32,"y":257,"w":110,"h":572,"rotation":0},"319w431":{"name":"Frame","type":"FRAME","x":-13,"y":329,"rotation":0},"319w494":{"name":"Group 178","destination":"319w1","x":152,"y":552,"w":110,"h":277,"rotation":0},"319w499":{"name":"Frame","type":"FRAME","x":98,"y":587,"rotation":0},"413w2139":{"name":"next 3","type":"FRAME","x":341,"y":1188,"rotation":-90.00000250447808},"413w2165":{"name":"badge 1","type":"FRAME","x":296.63583755493164,"y":929.9479751586914,"rotation":0}}},"413w1657":{"id":"413w1657","name":"24","clickableChildren":{"413w1856":{"name":"Frame","type":"FRAME","x":98,"y":587,"rotation":0},"413w1667":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0},"413w1676":{"name":"Frame","type":"FRAME","x":218,"y":589,"rotation":0},"413w1788":{"name":"Frame","type":"FRAME","x":61.63399600982666,"y":60.385658264160156,"rotation":0},"413w2018":{"name":"Rectangle 1","destination":"506w1486","x":55,"y":708,"w":305,"h":50,"rotation":0},"413w2025":{"name":"next 3","type":"FRAME","x":341,"y":566,"rotation":-90.00000250447808},"413w1993":{"name":"badge 1","type":"FRAME","x":296.63583755493164,"y":307.9479751586914,"rotation":0},"637w616":{"name":"back btn","destination":"313w386","x":26,"y":68,"w":31,"h":33,"rotation":0},"I413w1662;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0}}},"506w1486":{"id":"506w1486","name":"38","clickableChildren":{"506w1497":{"name":"Frame","type":"FRAME","x":98,"y":587,"rotation":0},"506w1584":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0},"506w1593":{"name":"Frame","type":"FRAME","x":218,"y":589,"rotation":0},"506w1704":{"name":"Frame","type":"FRAME","x":61.63399600982666,"y":60.385658264160156,"rotation":0},"506w1776":{"name":"next 3","type":"FRAME","x":341,"y":566,"rotation":-90.00000250447808},"506w1802":{"name":"badge 1","type":"FRAME","x":296.63583755493164,"y":307.9479751586914,"rotation":0},"637w661":{"name":"Confirm","destination":"13w6","x":194,"y":499,"w":140,"h":40,"rotation":0,"parent":"506w1486"},"637w660":{"name":"Cancel","destination":"413w1657","x":81,"y":499,"w":95,"h":40,"rotation":0,"parent":"506w1486"},"I506w1809;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0}}},"319w1":{"id":"319w1","name":"6","clickableChildren":{"I319w4;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"319w9":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0},"319w13":{"name":"Group 177","destination":"313w680","x":272,"y":552,"w":110,"h":277,"rotation":0},"319w18":{"name":"Frame","type":"FRAME","x":218,"y":589,"rotation":0},"319w123":{"name":"Group 176","destination":"319w304","x":32,"y":552,"w":110,"h":277,"rotation":0},"319w128":{"name":"Frame","type":"FRAME","x":-13,"y":615,"rotation":0},"319w191":{"name":"Group 178","destination":"413w2170","x":152,"y":257,"w":110,"h":572,"rotation":0},"319w196":{"name":"Frame","type":"FRAME","x":98,"y":301,"rotation":0},"413w2553":{"name":"next 3","type":"FRAME","x":339,"y":1187,"rotation":-90.00000250447808},"413w2578":{"name":"si-glyph:ambulance","type":"FRAME","x":292.58959579467773,"y":923.5895957946777,"rotation":0}}},"413w2170":{"id":"413w2170","name":"26","clickableChildren":{"413w2180":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0},"413w2189":{"name":"Frame","type":"FRAME","x":218,"y":589,"rotation":0},"413w2300":{"name":"Frame","type":"FRAME","x":-13,"y":615,"rotation":0},"413w2370":{"name":"Frame","type":"FRAME","x":66.22222137451172,"y":49.19894790649414,"rotation":0},"I413w2175;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"413w2474":{"name":"Rectangle 1","destination":"506w1824","x":55,"y":708,"w":305,"h":50,"rotation":0},"413w2481":{"name":"next 3","type":"FRAME","x":341,"y":565,"rotation":-90.00000250447808},"413w2506":{"name":"si-glyph:ambulance","type":"FRAME","x":292.58959579467773,"y":301.58959579467773,"rotation":0},"637w617":{"name":"back btn","destination":"313w386","x":26,"y":68,"w":31,"h":33,"rotation":0}}},"506w1824":{"id":"506w1824","name":"39","clickableChildren":{"506w1834":{"name":"menu","type":"FRAME","x":32,"y":70,"rotation":0},"506w1843":{"name":"Frame","type":"FRAME","x":218,"y":589,"rotation":0},"506w1954":{"name":"Frame","type":"FRAME","x":-13,"y":615,"rotation":0},"506w2025":{"name":"Frame","type":"FRAME","x":66.22222137451172,"y":49.19894790649414,"rotation":0},"506w2120":{"name":"next 3","type":"FRAME","x":341,"y":565,"rotation":-90.00000250447808},"506w2145":{"name":"si-glyph:ambulance","type":"FRAME","x":292.58959579467773,"y":301.58959579467773,"rotation":0},"I506w2109;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"638w4":{"name":"Confirm","destination":"13w6","x":194,"y":499,"w":140,"h":40,"rotation":0,"parent":"506w1824"},"638w7":{"name":"Cancel","destination":"413w2170","x":81,"y":499,"w":95,"h":40,"rotation":0,"parent":"506w1824"}}},"525w2216":{"id":"525w2216","name":"43","clickableChildren":{"I525w2218;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"525w2326":{"name":"finish 1","type":"FRAME","x":58,"y":659,"rotation":0},"525w2400":{"name":"Other Shelters","type":"FRAME","x":39,"y":758,"rotation":0},"525w2354":{"name":"finish 1","type":"FRAME","x":76,"y":52,"rotation":0},"525w2378":{"name":"finish 1","type":"FRAME","x":638,"y":52,"rotation":0},"525w2366":{"name":"finish 1","type":"FRAME","x":357,"y":52,"rotation":0},"525w2390":{"name":"finish 1","type":"FRAME","x":919,"y":52,"rotation":0},"637w615":{"name":"back btn","destination":"636w534","x":34,"y":73,"w":31,"h":33,"rotation":0},"637w588":{"name":"left-arrow (2) 1","type":"FRAME","x":36,"y":76,"rotation":0}}},"159w210":{"id":"159w210","name":"3","clickableChildren":{"I159w212;18w51":{"name":"_battery","type":"FRAME","x":361,"y":17,"rotation":0},"159w452":{"name":"Group 109","destination":"636w534","x":180,"y":722,"w":180,"h":50,"rotation":0},"159w489":{"name":"Group 105","destination":"636w534","x":55,"y":285,"w":305,"h":50,"rotation":0},"159w492":{"name":"google 1","type":"FRAME","x":110.1809196472168,"y":299,"rotation":0},"159w499":{"name":"Group 106","destination":"159w144","x":55,"y":722,"w":104,"h":50,"rotation":0}}}};
+      const startFrameId = {"start":"525w1599"};
+      const retina = true;
+      window.onload = function () {
+        // name is wrong, need to add the index!
+        let oneX = "images/" + frames[startFrameId["start"]].id + "-" + frames[startFrameId["start"]].name + ".png";
+        document.getElementById("content").src = oneX;
+        document.getElementById("content").className = frames[startFrameId["start"]].id;
+        if (retina === true) {
+          let twoX = "images/" + frames[startFrameId["start"]].id + "-" + frames[startFrameId["start"]].name + "@2x.png 2x";
+          document.getElementById("content").srcset = oneX + " 1x, " + twoX;
+        }
+        renderClickableAreas();
+      };
+
+      // Hide helper after 5 seconds
+      window.addEventListener("load", function () {
+        document.getElementById("helper").classList.remove("hidden");
+        setTimeout(function () {
+          document.getElementById("helper").className = 'hidden';
+        }, 5000);
+      });
+
+      // listen to keydown events
+      window.addEventListener("keydown", event => {
+        // R to go back to start
+        if (event.isComposing || KeyboardEvent.keyCode === 82) {
+          let oneX = "images/" + frames[startFrameId["start"]].id + "-" + frames[startFrameId["start"]].name + ".png";
+          document.getElementById("content").src = oneX;
+          document.getElementById("content").className = frames[startFrameId["start"]].id;
+          if (retina === true) {
+            let twoX = "images/" + frames[startFrameId["start"]].id + "-" + frames[startFrameId["start"]].name + "@2x.png 2x";
+            document.getElementById("content").srcset = oneX + " 1x, " + twoX;
+          }
+          document.documentElement.scrollTop = 0;
+        }
+        // H to hide the interface
+        if (event.isComposing || KeyboardEvent.keyCode === 72) {
+          if (document.getElementById("helper").className !== 'hidden') {
+            document.getElementById("helper").className = 'hidden';
+          } else {
+            document.getElementById("helper").className = '';
+          }
+        }
+      });
+      
+      function renderClickableAreas() {
+        let clickableDiv = document.getElementById("clickables");
+        if (clickableDiv.children.length > 0) {
+          clickableDiv.innerHTML = '';
+        }
+        
+        let currentFrame = document.getElementById("content").className;
+        for (let i = 0; i < Object.keys(frames[currentFrame].clickableChildren).length; i++) {
+          var newContent = document.createElement('div');
+          let layerName = Object.keys(frames[currentFrame].clickableChildren)[i];
+          let layer = frames[currentFrame].clickableChildren[layerName];
+          
+          if (layer.destination) {
+          newContent.style.position = 'absolute';
+          newContent.className = layerName;
+          newContent.style.width = layer.w + 'px';
+          newContent.style.height = layer.h + 'px';
+          newContent.style.top = layer.y + 'px';
+          newContent.style.left = layer.x + 'px';
+          newContent.style.cursor = 'pointer';
+          if (layer.parent && frames[currentFrame].clickableChildren[layer.parent]) {
+            let combinedY = layer.y + frames[currentFrame].clickableChildren[layer.parent].y; 
+            let combinedX = layer.x + frames[currentFrame].clickableChildren[layer.parent].x; 
+          newContent.style.top = combinedY + 'px';
+          newContent.style.left = combinedX + 'px';     
+          }
+          newContent.setAttribute("onclick", "navigateTo('"+layer.destination+"')");
+          
+          clickableDiv.appendChild(newContent);
+          }
+        }
+      }
+
+    function navigateTo(newFrameId) {
+      let oneX = "images/" + newFrameId + "-" + frames[newFrameId].name + ".png";
+      document.getElementById("content").className = newFrameId;
+      document.getElementById("content").src = oneX;
+      document.documentElement.scrollTop = 0;
+      if (retina === true) {
+        let twoX = "images/" + newFrameId + "-" + frames[newFrameId].name + "@2x.png 2x";
+        document.getElementById("content").srcset = oneX + " 1x, " + twoX;
+      }
+      renderClickableAreas();
+    }
+    </script>
+</head>
+<body>
+<div id="helper" class="hidden">
+    <ul>
+        <li>
+            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.00318 2.52632C8.76035 2.52632 10.1864 3.94105 10.1864 5.68421C10.1864 6.09474 10.1037 6.48 9.95725 6.84L11.8163 8.68421C12.7776 7.88842 13.5352 6.85895 14 5.68421C12.8986 2.91158 10.1801 0.947368 6.99682 0.947368C6.1055 0.947368 5.25239 1.10526 4.46294 1.38947L5.83811 2.75368C6.201 2.60842 6.58936 2.52632 7.00318 2.52632ZM0.636653 0.802105L2.08822 2.24211L2.38108 2.53263C1.32424 3.34737 0.496589 4.43368 0 5.68421C1.10141 8.45684 3.81992 10.4211 7.00318 10.4211C7.99 10.4211 8.93224 10.2316 9.79172 9.89053L10.0591 10.1558L11.9245 12L12.7331 11.1979L1.4452 0L0.636653 0.802105ZM4.15734 4.29474L5.14416 5.27368C5.11232 5.40632 5.09322 5.54526 5.09322 5.68421C5.09322 6.73263 5.94634 7.57895 7.00318 7.57895C7.14325 7.57895 7.28331 7.56 7.41701 7.52842L8.40382 8.50737C7.97726 8.71579 7.50614 8.8421 7.00318 8.8421C5.24602 8.8421 3.81992 7.42737 3.81992 5.68421C3.81992 5.18526 3.94725 4.71789 4.15734 4.29474V4.29474ZM6.90132 3.80211L8.90678 5.79158L8.91951 5.69053C8.91951 4.64211 8.06639 3.79579 7.00955 3.79579L6.90132 3.80211Z"
+                      fill="white"/>
+            </svg>
+            Hide interface (H)
+        </li>
+        <li>
+            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 5L5 1M1 5L5 9M1 5H12C13.1046 5 14 5.89543 14 7V11" stroke="white" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Restart (R)
+        </li>
+
+    </ul>
+</div>
+<div id="clickables"></div>
+<img id="content" src=""/>
+</body>
+</html>
